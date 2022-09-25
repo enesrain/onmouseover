@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+   
+<style>
+
+.maindiv {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.maindiv div {
+    width: 50px;
+    height: 70px;
+    padding: 5px;
+    border: 2px solid red;
+    color: red;
+    margin: 1px;
+}
+
+</style>
+
+  </head>
+  <body>
+    
+
+     <div class="maindiv">
+
+    <div class="div"  id="div1">1</div>
+    <div class="div" id="div2">2</div>
+    <div class="div" id="div3">3</div>
+    <div class="div"   id="div4">4</div>
+
+
+     </div>
+     <div class="maindiv">
+
+        <div class="div"  id="div1">5</div>
+        <div class="div" id="div2">6</div>
+        <div class="div" id="div3">7</div>
+        <div class="div"   id="div4">8</div>
+    
+    
+         </div>
+         <div class="maindiv">
+
+            <div class="div"  id="div1">9</div>
+            <div class="div" id="div2">10</div>
+            <div class="div" id="div3">11</div>
+            <div class="div"   id="div4">12</div>
+        
+        
+             </div>
+
+    <script>
+
+    //  amele yöntemi hepsine ayrı fonksiyon ayrı id vermek gerekiyor--------------------------------------------------------
+    // function red1 () {
+    //     let box = document.getElementById('div1').style.backgroundColor; 
+
+    //     if(box=="white") {
+    //         document.getElementById('div1').style.backgroundColor="red";
+    //     }
+    //     else {
+    //         document.getElementById('div1').style.backgroundColor="white";
+    //     }
+        
+    // }
+    // function red2 () {
+    //     let box = document.getElementById('div2').style.backgroundColor; 
+
+    //     if(box=="white") {
+    //         document.getElementById('div2').style.backgroundColor="red";
+    //     }
+    //     else {
+    //         document.getElementById('div2').style.backgroundColor="white";
+    //     }
+        
+    // }function red3 () {
+    //     let box = document.getElementById('div3').style.backgroundColor; 
+
+    //     if(box=="white") {
+    //         document.getElementById('div3').style.backgroundColor="red";
+    //     }
+    //     else {
+    //         document.getElementById('div3').style.backgroundColor="white";
+    //     }
+        
+    // }function red4 () {
+    //     let box = document.getElementById('div4').style.backgroundColor; 
+
+    //     if(box=="white") {
+    //         document.getElementById('div4').style.backgroundColor="red";
+    //     }
+    //     else {
+    //         document.getElementById('div4').style.backgroundColor="white";
+    //     }
+        
+    // }
+
+
+
+    let dizi = document.querySelectorAll(".div");
+     for(let i = 0;i<dizi.length;i++) {
+        dizi[i].onmouseover=function(){
+
+            if(this.style.backgroundColor=="red") {
+            this.style.backgroundColor="white";
+            }
+            else {
+            this.style.backgroundColor="red"; 
+            }
+        }
+     }
+
+
+
+//     const kutular = document.querySelectorAll(".div");
+
+//  for(var i=0;i<kutular.length;i++)
+//  {
+//      kutular[i].onmouseover=function(){
+//          if(this.style.backgroundColor=="red")
+//          {
+//              this.style.backgroundColor="white";
+//          }
+//          else
+//          {
+//              this.style.backgroundColor="red";
+//          }
+//      }
+
+//  }
+
+
+</script>
+  </body>
+</html>
